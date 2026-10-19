@@ -1,29 +1,38 @@
 # Miscelánea
 
-## Estructura
-
-### Código
-
-```text
-DATOS → LÓGICA → INTERFAZ
-```
-
-```text
-mi_app/
-│
-├── main.py
-├── interfaz.py
-├── modelos.py
-├── logica.py
-└── recursos/
-```
-
-### Componentes
+## Diálogos `messagebox`
 
 ```python
-class Componente(ttk.Frame):
-    def __init__(self, parent, texto):
-        super().__init__(parent)
-
-        #...
+from tkinter import messagebox
 ```
+
+- `.showinfo()`    → Mostrar informacion
+- `.showwarning()` → Mostrar advertencia
+- `.showerror()`   → Mostrar error
+- `.askyesno()`    → Solicitar confirmación (devuelve `bool`)
+
+## Gestión de archivos
+
+```python
+from tkinter import filedialog
+```
+
+- `.askdirectory()`      → Seleccionar carpeta (devuelve **ruta**)
+- `.askopenfilename()`   → Seleccionar archivos
+- `.asksaveasfilename()` → Guardar archivo
+
+### Propiedades
+
+- `defaultextension` → Extensión por defecto
+- `filetypes`        → Tipos de archivos
+
+## Ventanas secundarias `Toplevel`
+
+```python
+root = tk.Tk()
+window = tk.Toplevel(root)
+```
+
+- `.grab_set()` → Establecer como ventana de trabajo (**modal**)
+
+## Menús

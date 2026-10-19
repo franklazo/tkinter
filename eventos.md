@@ -1,4 +1,4 @@
-# Eventos
+# Eventos y `after`
 
 ## Asociar funciones
 

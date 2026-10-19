@@ -1,4 +1,4 @@
-# Estados
+# Estados (variables)
 
 ## Variables
 
@@ -7,7 +7,7 @@
 - `DoubleVar`  → Números flotantes
 - `BooleanVar` → Booleanos
 
-### Métodos
+## Métodos
 
 - `.get()`       → Obtener valor
 - `.set()`       → Modificar valor
