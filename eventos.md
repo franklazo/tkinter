@@ -1,15 +1,14 @@
-# Eventos y comportamiento
+# Eventos
 
-- `command`      → Asociar función con **acción del widget**
-- `.bind()`      → Asociar función con **evento del widget**
-- `.bind_all()`  → Asociar función con **evento de la aplicación**
+## Asociar funciones
+
+- `command`      → Acción del widget
+- `.bind()`      → Evento del widget
+- `.bind_all()`  → Evento de la aplicación
+- `.trace_add()` → Evento de variable
 - `.unbind()`    → Quitar binding
-- `.trace_add()` → Asociar función con **evento de variable**
-- `.focus_set()` → Establecer foco
 
-## Eventos
-
-### Mouse
+## Eventos del mouse
 
 - `<Button-1>`        → Clic izquierdo
 - `<Button-2>`        → Clic central
@@ -21,7 +20,7 @@
 - `<ButtonPress>`     → Botón presionado
 - `<ButtonRelease>`   → Botón liberado
 
-### Teclado
+## Eventos del teclado
 
 - `<Key>`       → Tecla cualquiera
 - `<Return>`    → Tecla `Enter`
