@@ -64,6 +64,8 @@ widget.pack()                  # colocar en la interfaz
 - `from_`               → Valor mínimo
 - `to`                  → Valor máximo
 - `command`             → Callback al accionar
+- `validate`            → Tipo de validación
+- `validatecommand`     → Validación de entrada (registrar función)
 - `state`               → Estado del widget
 - `width`               → Anchura (caracteres)
 - `height`              → Altura (líneas o filas)

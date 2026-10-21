@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from PIL import Image, ImageTk
 
 
 def abrir_archivo():
@@ -15,37 +16,19 @@ ventana = tk.Tk()
 ventana.title("Menús")
 ventana.geometry("240x240")
 
+image = Image.open("test.jpeg")
 
-barra_menu = tk.Menu(ventana)
+image = image.resize((300, 200))
 
-menu_archivo = tk.Menu(
-    barra_menu,
-    tearoff=False,
+tk_image = ImageTk.PhotoImage(image)
+
+label = tk.Label(
+    ventana,
+    image=tk_image
 )
 
-menu_archivo.add_command(
-    label="Abrir",
-    command=abrir_archivo,
-)
+label.pack()
 
-menu_archivo.add_command(
-    label="Guardar",
-    command=guardar_archivo,
-)
-
-menu_archivo.add_separator()
-
-menu_archivo.add_command(
-    label="Salir",
-    command=ventana.destroy
-)
-
-barra_menu.add_cascade(
-    label="Archivo",
-    menu=menu_archivo,
-)
-
-ventana.config(menu=barra_menu)
-
+label.image = tk_image
 
 ventana.mainloop()

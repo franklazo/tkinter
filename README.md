@@ -8,12 +8,6 @@ Apuntes generales de la biblioteca estándar de Python [Tkinter][tkinter]
 - [Estados (variables)](estados.md)
 - [Miscelánea](miscelanea.md)
 
-Otros widgets
-
-- `Canvas`      → Lienzo
-- `Scrollbar`   → Barra de desplazamiento
-- `PanedWindow` → Ventana con paneles
-
 <!-- REFERENCIAS -->
 
 [tkinter]: https://docs.python.org/3/library/tkinter.html

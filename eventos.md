@@ -31,7 +31,7 @@
 ## Objeto `event`
 
 ```python
-def funcion(event):
+def function(event):
     # ...
 
     # Detener propagación
@@ -40,7 +40,7 @@ def funcion(event):
 
 ```python
 # Usar como función y como callback
-def funcion(event=None):
+def function(event=None):
     # ...
 ```
 
@@ -53,18 +53,18 @@ def funcion(event=None):
 ## Método `after`
 
 ```python
-ventana.after(1000, funcion)
+window.after(1000, function)
 ```
 
 ```python
 # Identificador
-id_after = ventana.after(1000, funcion)
+id_after = window.after(1000, function)
 
 # Cancelar ejecución
-ventana.after_cancel(id_after)
+window.after_cancel(id_after)
 ```
 
 ```python
 # Cuando termine el proceso actual
-ventana.after_idle(funcion)
+window.after_idle(function)
 ```
